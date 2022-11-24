@@ -1,5 +1,4 @@
 <div class="flex md:flex-row-reverse flex-wrap">
-
     <!--Main Content-->
     <div class="w-full md:w-4/5 bg-gray-100">
         <div class="container bg-gray-100 pt-16 px-6 h-screen">
@@ -9,38 +8,5 @@
     </div>
 
     <!--Sidebar-->
-    <div class="w-full md:w-1/5 bg-gray-900 md:bg-gray-900 px-2 text-center fixed bottom-0 md:pt-8 md:top-0 md:left-0 h-16 md:h-screen md:border-r-4 md:border-gray-600">
-        <div class="md:relative mx-auto lg:float-right lg:px-6">
-            <ul class="list-reset flex flex-row md:flex-col text-center md:text-left">
-                <li class="mr-3 flex-1">
-                    <div class="block py-1 md:py-3 pl-1 align-middle text-gray-800 no-underline hover:text-pink-500 border-b-1 border-gray-800 md:border-gray-900 hover:border-pink-500">
-                        <i class="fa-solid fa-sliders pr-0 md:pr-3 text-white"></i>
-                        <span class="pb-1 md:pb-0 text-xs font-semibold md:text-base text-gray-400 md:text-gray-400 block md:inline-block">Filtro</span>
-                    </div>
-                </li>
-                <li routerLink="" routerLinkActive="border-pink-600 border-b-2" [routerLinkActiveOptions]="{exact: true}" class="mr-3 flex-1">
-                    <div class="cursor-pointer block py-1 md:py-3 pl-1 align-middle text-gray-500 no-underline hover:text-pink-500 border-b-2 border-gray-800 md:border-gray-900 hover:border-pink-500">
-                        <i class="fa-solid fa-flag-usa text-gray-200 pr-0 md:pr-3"></i>
-                        <span class="pb-1 md:pb-0 text-xs md:text-base text-gray-400 md:text-gray-400 block md:inline-block">Por Pais</span>
-                    </div>
-                </li>
-
-                <li routerLink="region" routerLinkActive="border-pink-600 border-b-2" [routerLinkActiveOptions]="{exact: true}" class="mr-3 flex-1">
-                    <div class="cursor-pointer block py-1 md:py-3 pl-1 align-middle text-gray-500 no-underline hover:text-pink-500 border-b-2 border-gray-800 md:border-gray-900 hover:border-pink-500">
-                        <i class="fa-solid fa-earth-americas text-gray-200 pr-0 md:pr-3"></i>
-                        <span class="pb-1 md:pb-0 text-xs md:text-base text-gray-400 md:text-gray-400 block md:inline-block">Por Region</span>
-                    </div>
-                </li>
-
-                <li routerLink="capital" routerLinkActive="border-pink-600 border-b-2" [routerLinkActiveOptions]="{exact: true}" class="mr-3 flex-1">
-                    <div class="cursor-pointer block py-1 md:py-3 pl-1 align-middle text-gray-500 no-underline hover:text-pink-500 border-b-2 border-gray-800 md:border-gray-900 hover:border-pink-500">
-                        <i class="fa-regular fa-flag text-gray-200 pr-0 md:pr-3"></i>
-                        <span class="pb-1 md:pb-0 text-xs md:text-base text-gray-400 md:text-gray-400 block md:inline-block">Por Capital</span>
-                    </div>
-                </li>
-
-
-            </ul>
-        </div>
-    </div>
+    <app-sidebar></app-sidebar>
 </div>
