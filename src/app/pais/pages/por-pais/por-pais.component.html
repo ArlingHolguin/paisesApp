@@ -1,4 +1,4 @@
-<app-pais-input (onEnter)="buscar($event)"></app-pais-input>
+<app-pais-input (onEnter)="buscar($event)" (onDebounce)="sugerencias( $event )" placeholder="Buscar por país"></app-pais-input>
 
 <div *ngIf="hayError" class="text-red-600 bg-red-100 py-1 px-6 text-sm float-right rounded-md mt-[-10px] hidden md:block">
     <i class="fa-regular fa-face-sad-tear mr-2"></i>No se encontraron coincidencias
