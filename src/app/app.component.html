@@ -1,12 +1,21 @@
 <div class="flex md:flex-row-reverse flex-wrap">
     <!--Main Content-->
-    <div class="w-full md:w-4/5 bg-gray-100">
-        <div class="container bg-gray-100 pt-16 px-6 h-screen">
+    <div class="w-full md:w-10/12 mt-2 px-4  ">
+        <!-- Search  -->
+        <!-- <app-pais-input (onEnter)="buscar($event)"></app-pais-input> -->
+
+
+        <div class="h-screen">
             <!-- Contenido pages  -->
             <router-outlet></router-outlet>
+
         </div>
     </div>
 
-    <!--Sidebar-->
-    <app-sidebar></app-sidebar>
+    <!-- app-sidebar -->
+    <div class="w-full md:w-2/12 bg-gray-900 md:bg-gray-900 px-2 text-center fixed bottom-0 md:pt-8 md:top-0 md:left-0 h-16 md:h-screen md:border-r-4 md:border-gray-600">
+        <div class="md:relative mx-auto lg:float-right lg:px-8">
+            <app-sidebar></app-sidebar>
+        </div>
+    </div>
 </div>
