@@ -7,6 +7,9 @@ import { Country } from '../interfaces/pais.interface';
   providedIn: 'root'
 })
 export class PaisService {
+  static getPaisPorAlpha(id: any) {
+    throw new Error('Method not implemented.');
+  }
   private apiUrl: string = 'https://restcountries.com/v2';
 
   constructor(private http: HttpClient) {}
@@ -20,5 +23,11 @@ export class PaisService {
     const url = `${this.apiUrl}/capital/${termino}`;
     return this.http.get<Country[]>(url);
   }
+
+  getPaisPorAlpha(id: string): Observable<Country> {
+    const url = `${this.apiUrl}/alpha/${id}`;
+    return this.http.get<Country>(url);
+  }
+
 
 }
